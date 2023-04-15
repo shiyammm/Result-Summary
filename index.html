@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="result-summary">
+        <section class="left">
+          <p class="result">Your Result</p>
+          <div class="circle">
+            <h1 class="score">76</h1>
+            <p class="total">of 100</p>
+          </div>
+          <h3>Great</h3>
+          <p>
+            You scored higher than 65% of <br />
+            the people who have taken these tests.
+          </p>
+        </section>
+        <section class="right">
+          <div class="summary">Summary</div>
+          <div class="summary-items">
+            <div class="summary-item" id="summary-item1">
+              <img src="assets/images/icon-reaction.svg" alt="" />
+              <p class="word1">Reaction</p>
+              <div class="marks">
+                <p class="scores">80 <span class="mark">/100</span></p>
+              </div>
+            </div>
+            <div class="summary-item" id="summary-item2">
+              <img src="assets/images/icon-memory.svg" alt="" />
+              <p class="word2">Memory</p>
+              <div class="marks">
+                <p class="scores">92 <span class="mark">/100</span></p>
+              </div>
+            </div>
+            <div class="summary-item" id="summary-item3">
+              <img src="assets/images/icon-verbal.svg" alt="" />
+              <p class="word3">Verbal</p>
+              <div class="marks">
+                <p class="scores">61 <span class="mark">/100</span></p>
+              </div>
+            </div>
+            <div class="summary-item" id="summary-item4">
+              <img src="assets/images/icon-visual.svg" alt="" />
+              <p class="word4">Visual</p>
+              <div class="marks">
+                <p class="scores">72 <span class="mark">/100</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <button class="btn">Continue</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/shiyammm">shiyammm</a>.
+    </div>
+  </body>
+</html>
