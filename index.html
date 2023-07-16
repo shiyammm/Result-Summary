@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwindcss-config.js"></script>
+  </head>
+  <body class="flex justify-center items-center min-h-screen font-han">
+    <main class="sm:flex sm:drop-shadow-2xl bg-white sm:rounded-3xl">
+      <article
+        class="bg-gradient-to-b from-slateBlue to-royalBlue w-80 h-[28rem] p-8 rounded-[2rem] sm:rounded-3xl text-center flex flex-col gap-7 items-center"
+      >
+        <h1 class="text-lightLavender text-[1.3rem] font-bold">Your Result</h1>
+        <div
+          class="bg-royalBlue rounded-full w-44 h-44 flex justify-center items-center bg-gradient-to-t from-persianBlue to-violetBlue"
+        >
+          <p class="flex flex-col text-white text-[4rem] font-bold leading-10">
+            76
+            <span class="text-[1rem] text-lightLavender opacity-70">
+              of 100</span
+            >
+          </p>
+        </div>
+        <div class="grid gap-2">
+          <p class="text-[1.7rem] font-bold text-white">Great</p>
+          <p class="px-4 text-paleBlue">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </article>
+      <article
+        class="w-80 h-[28rem] p-7 flex flex-col gap-6 bg-white rounded-3xl"
+      >
+        <p class="text-[1.5rem] font-bold text-darkGrayBlue">Summary</p>
+        <div class="grid gap-4">
+          <div
+            class="flex justify-between bg-bgReaction py-3 px-4 items-center rounded-lg items-center"
+          >
+            <div class="flex gap-3 items-center">
+              <picture>
+                <img src="assets/images/icon-reaction.svg" alt="" />
+              </picture>
+              <p class="text-reaction">Reaction</p>
+            </div>
+            <div>
+              <p class="font-bold">
+                80 <span class="text-darkGrayBlue"> / 100</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-between bg-bgMemory py-3 px-3 items-center rounded-lg items-center"
+          >
+            <div class="flex gap-3 items-center">
+              <picture>
+                <img src="assets/images/icon-memory.svg" alt="" />
+              </picture>
+              <p class="text-memory">Memory</p>
+            </div>
+            <div>
+              <p class="font-bold">
+                92 <span class="text-darkGrayBlue"> / 100</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-between bg-bgVerbal py-3 px-3 items-center rounded-lg items-center"
+          >
+            <div class="flex gap-3 items-center">
+              <picture>
+                <img src="assets/images/icon-verbal.svg" alt="" />
+              </picture>
+              <p class="text-verbal">Verbal</p>
+            </div>
+            <div>
+              <p class="font-bold">
+                61 <span class="text-darkGrayBlue"> / 100</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-between bg-bgVisual py-3 px-3 items-center rounded-lg"
+          >
+            <div class="flex gap-3 items-center">
+              <picture>
+                <img src="assets/images/icon-visual.svg" alt="" />
+              </picture>
+              <p class="text-visual">Visual</p>
+            </div>
+            <div>
+              <p class="font-bold">
+                72 <span class="text-darkGrayBlue"> / 100</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="px-24 py-3 bg-darkGrayBlue rounded-3xl text-white hover:bg-gradient-to-b from-slateBlue to-royalBlue font-bold"
+          >
+            Continue
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
